@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   modules: ["@pinia/nuxt"],
 
   nitro: {
+    preset: "netlify",
     routeRules: {
       "/api/**": {
         proxy: "https://naukatv.ru/api/**",
