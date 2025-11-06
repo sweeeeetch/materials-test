@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "./fonts.css";
+
+@theme {
+  --font-sans: "Futura PT", system-ui, sans-serif;
+  --font-second: "Source Sans 3";
+
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  --color-light-colorslight-blue: #e7f8fe;
+  --color-bright-colorsblue: #00b2ff;
+  --color-light-gray: #a0a0ab;
+  --color-gray: #6b7280;
+  --color-blue: #00b2ff;
+
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px 0 rgb(0 0 0 / 0.06);
+  --shadow-card-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+  --shadow-card-custom: -2px 5px 13px 0 rgba(0, 0, 0, 0.04), -9px 21px 23px 0 rgba(0, 0, 0, 0.04), -21px 48px 31px 0 rgba(0, 0, 0, 0.02), -37px 85px 37px 0 rgba(0, 0, 0, 0.01),
+    -57px 133px 40px 0 rgba(0, 0, 0, 0);
+}
+
+body {
+  background: #f4f6fb;
+}
+
+.container {
+  @apply mx-auto container px-4 sm:px-6 lg:px-8;
+}
